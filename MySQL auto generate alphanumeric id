@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS `Products` (
+  `prefix` varchar(2) NOT NULL DEFAULT 'SD',
+  `id` int(10) unsigned ZEROFILL NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`prefix`, `id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 
+;
+
+
+
+
+
+INSERT INTO `Products` (`prefix`, `name`) VALUES
+('SD', 'neha1 SD #1'),
+('SD', ' neha2   SD #2'),
+('SD', ' neha3   SD #3'),
+('SD', ' neha4   SD #4'),
+('SD', ' neha5   SD #5'),
+('SD', ' neha6   SD #6'),
+('TE', ' neha7   TE #1'),
+('TE', ' neha8   TE #2'),
+('TE', ' neha9   TE #3'),
+('TE', ' neha10   TE #4'),
+('TE', ' neha11 TE #5'),
+('TE', ' neha12  TE #6')
+;
